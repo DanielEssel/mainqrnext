@@ -1,8 +1,8 @@
-import Navbar from "@/components/navbar/page";
-import Footer from "@/components/footer/page";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import PricingSection from "@/components/PricingSection";
 import Info3 from "@/components/pages/info3/page";
-import FAQPage from "@/components/pages/faqpage/page";
+import FAQSection from "@/components/sections/FAQSection";
 import PricingHeroSec from "@/components/PricingHeroSec";
 import AddOnsSection from "@/components/AddOnsSection";
 
@@ -15,7 +15,7 @@ export default function PricingPage() {
         <PricingHeroSec />
         <PricingSection />
         <AddOnsSection />
-        <FAQPage />
+        <FAQSection />
         <Info3 />
       </main>
       

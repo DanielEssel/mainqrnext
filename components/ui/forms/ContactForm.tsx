@@ -25,7 +25,7 @@ export default function ContactForm() {
     <div className="w-full bg-white rounded-2xl p-6 sm:p-8 shadow-md">
       <div className="mb-6 text-center sm:text-left">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Get In Touch With Us</h1>
-        <p className="text-gray-600 text-md sm:text-lg">We’d love to hear from you. Send us a message!</p>
+        <p className="text-gray-600 text-md sm:text-lg">We'd love to hear from you. Send us a message!</p>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-5">

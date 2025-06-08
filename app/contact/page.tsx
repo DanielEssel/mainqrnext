@@ -1,8 +1,8 @@
 import ContactHeader from "@/components/ContactHeader";
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/ui/forms/ContactForm";
 import ContactMap from "@/components/ContactMap";
-import Navbar from "@/components/navbar/page";
-import Footer from "@/components/footer/page";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 export default function ContactPage() {
   return (

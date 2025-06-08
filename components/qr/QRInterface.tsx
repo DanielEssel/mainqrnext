@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import CategorySelector from '@/components/CategorySelector';
-import QrFormRenderer from '@/components/QrFormRenderer';
-import QrPreview from '@/components/QrPreview';
+import CategorySelector from './CategorySelector';
+import QRFormRenderer from './QRFormRenderer';
+import QRPreview from './QRPreview';
 import QRDesignPanel from './QRDesignPanel';
 
-export default function QrInterface() {
+export default function QRInterface() {
   const [category, setCategory] = useState<string>('link');
   const [formData, setFormData] = useState<any>({});
 
@@ -18,12 +18,12 @@ export default function QrInterface() {
         {/* Left: Category + Form */}
         <div>
           <CategorySelector selected={category} onSelect={setCategory} />
-          <QrFormRenderer category={category} formData={formData} setFormData={setFormData} />
+          <QRFormRenderer category={category} formData={formData} setFormData={setFormData} />
           <QRDesignPanel />
         </div>
 
         {/* Right: Preview + Button */}
-        <QrPreview formData={formData} category={category} />
+        <QRPreview formData={formData} category={category} />
       </div>
     </div>
   );

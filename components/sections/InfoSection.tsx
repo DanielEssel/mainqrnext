@@ -5,7 +5,7 @@ import { RiTeamFill } from "react-icons/ri";
 import { SiGooglecalendar } from "react-icons/si";
 import { SlCalender } from "react-icons/sl";
 
-export default function Info1() {
+export default function InfoSection() {
   return (
     <section className="bg-white py-36 max-w-7xl px-6 md:px-16 mx-auto">
       {/* Top Texts */}

@@ -1,7 +1,7 @@
 "use client";
 
-import Sidebar from "@/components/Sidebar";
-import Header from "@/components/Header";
+import Sidebar from "@/components/dashboard/Sidebar";
+import Header from "@/components/dashboard/Header";
 import React, { useState } from "react";
 import MyQrCodesPage from "@/app/dashboard/myqrcodes/page";
 // import AnalyticsPage from "@/components/pages/AnalyticsPage";

@@ -8,7 +8,7 @@ interface Props {
   formData: any;
 }
 
-export default function QrPreview({ category, formData }: Props) {
+export default function QRPreview({ category, formData }: Props) {
   const [qrSrc, setQrSrc] = useState<string>('');
 
   useEffect(() => {

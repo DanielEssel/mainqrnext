@@ -2,9 +2,15 @@
 
 import { useState } from 'react';
 
-export default function QRFormRender({ selectedCategory }: { selectedCategory: string | null }) {
-  const [formData, setFormData] = useState<any>({});
-
+export default function QRFormRenderer({ 
+  category, 
+  formData, 
+  setFormData 
+}: { 
+  category: string | null;
+  formData: any;
+  setFormData: (data: any) => void;
+}) {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -17,11 +23,11 @@ export default function QRFormRender({ selectedCategory }: { selectedCategory: s
       <h2 className="text-xl font-semibold text-gray-800 mb-4">Enter Content</h2>
 
       <div className="bg-white border border-gray-300 rounded-xl p-6 shadow-sm">
-        {!selectedCategory && (
+        {!category && (
           <p className="text-gray-500 italic">Select a category to get started.</p>
         )}
 
-        {selectedCategory === 'link' && (
+        {category === 'link' && (
           <input
             type="url"
             name="url"
@@ -31,7 +37,7 @@ export default function QRFormRender({ selectedCategory }: { selectedCategory: s
           />
         )}
 
-        {selectedCategory === 'mail' && (
+        {category === 'mail' && (
           <input
             type="email"
             name="email"
@@ -41,7 +47,7 @@ export default function QRFormRender({ selectedCategory }: { selectedCategory: s
           />
         )}
 
-        {selectedCategory === 'sms' && (
+        {category === 'sms' && (
           <div className="space-y-3">
             <input
               type="tel"

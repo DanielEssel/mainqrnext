@@ -1,10 +1,10 @@
 import AboutHeroSection from '@/components/about/AboutHeroSection';
 import AboutThirdSection from '@/components/about/AboutThirdSection';
 import WhatWeStandFor from '@/components/about/WhatWeStandForSection';
-import Footer from '@/components/footer/page';
-import Navbar from '@/components/navbar/page';
-import BlogSection from '@/components/pages/blogp/page';
-import FAQPage from '@/components/pages/faqpage/page';
+import Footer from '@/components/layout/Footer';
+import Navbar from '@/components/layout/Navbar';
+import BlogSection from '@/components/sections/BlogSection';
+import FAQSection from '@/components/sections/FAQSection';
 
 export default function AboutPage() {
   return (
@@ -22,7 +22,7 @@ export default function AboutPage() {
         <AboutThirdSection />
 
         {/* FAQs */}
-        <FAQPage />
+        <FAQSection />
 
         {/* Blog Section */}
         <BlogSection />
